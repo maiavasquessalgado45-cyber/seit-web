@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEIT | Tecnología y Soluciones</title>
+  <link rel="icon" type="image/png" href="logo_seit.png" />
+  <style>
+    :root {
+      --azul1: #0c4e9f;
+      --azul2: #153564;
+      --azul3: #0d4fa0;
+      --gris: #a5abb4;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #0a0f1f;
+      color: var(--gris);
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(12, 78, 159, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      z-index: 10;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--gris);
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--azul1), var(--azul3));
+      text-align: center;
+      color: white;
+      padding: 8rem 1.5rem 5rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .nosotros p {
+      text-align: center;
+      line-height: 1.8;
+      color: var(--gris);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--azul2);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: var(--azul3);
+      margin-bottom: 0.5rem;
+    }
+    .catalogo {
+      text-align: center;
+    }
+    .catalogo a {
+      background: var(--azul3);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .catalogo a:hover {
+      background: var(--azul1);
+    }
+    .contacto {
+      background: var(--azul2);
+      border-radius: 12px;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: white;
+    }
+    footer {
+      background: #08142c;
+      text-align: center;
+      padding: 1rem;
+      color: var(--gris);
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav a { margin: 0 0.5rem; font-size: 0.9rem; }
+      header img { height: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo_seit.png" alt="Logo SEIT" />
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>SEIT</h1>
+    <p>Conectamos innovación, tecnología y confianza para hogares y empresas. Venta y mantenimiento de equipos electrónicos con excelencia.</p>
+  </section>
+
+  <section id="nosotros" class="nosotros">
+    <h2>Nosotros</h2>
+    <p>En SEIT creemos en el poder de la tecnología para transformar la vida diaria. Somos una empresa dedicada a ofrecer soluciones confiables, modernas y accesibles en equipos electrónicos y mantenimiento técnico. Nuestro compromiso es la calidad y la atención personalizada.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Computadores</h3>
+        <p>Equipos potentes para cada necesidad: trabajo, estudio o entretenimiento.</p>
+      </div>
+      <div class="card">
+        <h3>Impresoras</h3>
+        <p>Impresoras de calidad y servicio de mantenimiento especializado.</p>
+      </div>
+      <div class="card">
+        <h3>Televisores</h3>
+        <p>Calidad de imagen, sonido envolvente y tecnología moderna.</p>
+      </div>
+      <div class="card">
+        <h3>Accesorios</h3>
+        <p>Complementa tu experiencia con periféricos y repuestos confiables.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Mantenimiento Técnico</h3>
+        <p>Diagnóstico, reparación y optimización de equipos tecnológicos.</p>
+      </div>
+      <div class="card">
+        <h3>Instalación</h3>
+        <p>Montaje y configuración profesional de equipos electrónicos.</p>
+      </div>
+      <div class="card">
+        <h3>Asesoría</h3>
+        <p>Te ayudamos a elegir las soluciones ideales para tu hogar o empresa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo</h2>
+    <p>Explora todos nuestros productos en línea.</p>
+    <a href="https://heyzine.com/flip-book/ad70a7844c.html" target="_blank">Ver catálogo</a>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>📞 +57 300 000 0000</p>
+    <p>📧 seit@empresa.com</p>
+    <p>📍 Calle 123 #45-67, Bogotá</p>
+  </section>
+
+  <footer>
+    © 2025 SEIT - Tecnología y Soluciones
+  </footer>
+</body>
+</html>
